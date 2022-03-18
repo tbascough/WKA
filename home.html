@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wizard Knight Archer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header>
+		<div class="scorebord">
+			<p>Player Points</p>
+			<p id="ppoints">0</p>
+		</div>
+
+		<div class="headerText">
+			<h1>Wizard, Knight, Archer</h1>
+			<h2>Choose Your Champion</h2>
+		</div>
+
+		<div class="scorebord">
+			<p>Computer Points</p>
+			<p id="cpoints">0</p>
+		</div>
+
+	</header>
+
+	<main>
+		<div class="split hero">
+			<div id="heros">
+				<div id="rps_buttons">
+					<div class="character">
+						<button class="rps_btn btn_wizard">Wizard</button>
+						<div class="info">
+							<h3>Wizard</h3>
+							<h4>Masters of the Arcne.</h>
+							<ul>
+								<li>Blast Knights with magic</li>
+								<li>Weak against Archers</li>
+							</ul>
+						</div>
+					</div>
+					<div class="character">
+						<button class="rps_btn btn_knight">Knight</button>
+						<div class="info">
+							<h3>Knight</h3>
+							<h4>Honored Men at Arms</h>
+							<ul>
+								<li>Easily defeats Archers</li>
+								<li>Weak against magic attacks from Wizards</li>
+							</ul>
+						</div>
+					</div>
+					<div class="character">
+						<button class="rps_btn btn_archer">Archer</button>
+						<div class="info">
+							<h3>Archer</h3>
+							<h4>Stealthy Rangers</h>
+							<ul>
+								<li>Sneak attacks Wizards</li>
+								<li>camouflaged, light armor is weak against Knights</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="split baddies">
+			<div class="box">
+				<p> Enemy Champion</p>
+			</div>
+			<div class="box">
+				<p> Enemy Champion</p>
+			</div>
+			<div class="box">
+				<p> Enemy Champion</p>
+			</div>		
+		</div>
+
+		<div id="rps_result"  class="resultPage">
+			<button class="playagain" onclick='showOptions()'>Try Another Champion?</button>
+			<div id="restext"></div>
+			<div id="resimgcontainer"></div>
+			<div class="notes">
+				<p>Your Champion</p>
+				<p>Enemy Champion</p>
+			</div>
+		</div>
+
+	</main>
+	<script src="js/rsp.js"></script>
+</body>
+</html>

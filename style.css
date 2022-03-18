@@ -1,0 +1,307 @@
+.headerText{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-shadow: 2px 2px black;
+	letter-spacing: 2px;
+	}
+#loadscreen{
+	background-color: black;
+	color: red;
+	font-size: 50px;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.loadbox{
+	color: black;
+	text-decoration: none;
+	background-color: wheat;
+	border: #b3955b 10px solid;
+	height: 30%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 25%;
+	box-shadow: 5px 5px 5px saddlebrown;
+	transition: 0.4s;
+}
+.loadbox:hover{
+	color: darkred;
+	background-color: #E3CEA7;
+	border: #b3955b 10px solid;
+	height: 30%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 26%;
+	box-shadow: -5px 5px 5px saddlebrown;
+}
+.loadbox:active{
+	color: red;
+	background-color: #b3955b;
+	border: #b3955b 10px solid;
+	height: 30%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	box-shadow: -15px 5px 5px red;
+	transform: scale(4.0);
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Luminari, fantasy;
+	background-color: #fde1ab;
+	height: 100vh;
+}
+header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: darkred;
+	margin: 0px;
+}
+
+h1{
+	margin: 10px 0px 1px;
+	color: goldenrod;
+}
+h2{
+	margin: 0;
+	color: goldenrod;
+
+}
+main{
+	display: flex;
+	height: 100vh;
+}
+button{
+	font-family: inherit;
+}
+/*info blocks display on hover*/
+		.info{
+			display: flex;
+			flex-direction: column;
+			padding: 1px 20px;
+			border-radius: 25px;
+			background-color: whitesmoke;
+			border: black 1px solid;
+			width: 250px;
+			height: 250px;
+			margin: 15px 15px 15px 50px;
+	    	transition: all 0.5s;
+	    	opacity: 0;
+
+
+		}
+		.character{
+			display: flex;
+			flex-direction: row;
+		}
+		.btn_wizard:hover + .info{
+/*			display: flex;
+*/			opacity: 1;
+		}
+		.btn_knight:hover + .info{
+/*			display: flex;
+*/			opacity: 1;
+
+		}
+		.btn_archer:hover + .info{
+/*			display: flex;
+*/			opacity: 1;
+
+		}
+/*end info blocks display on hover*/
+
+.resultPage{
+	border: black 1px solid;
+}
+.playagain{
+	height: 100px;
+	width: 375px;
+	margin: 50px;
+	border-radius: 25px;
+	font-size: 30px;
+	box-shadow: 5px 5px 5px #6b3b35;
+}
+.scorebord{
+	border-radius: 25px;
+	border: 1px black solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 10px;
+	padding-bottom: 0;
+	margin: 10px;
+	background-color: lightyellow;
+}
+.split {
+	width: 50%;
+	padding: 10px;
+}
+
+/*the white half of the page*/
+	.centered{
+		align-self: center;
+		justify-self: center;
+	}
+	.heros {
+		left: 0;
+		background-color: #fde1ab;
+	}
+	.rps_btn{
+		border-radius: 25px;
+		display: flex;
+		justify-content: left;
+		width:250px;
+		height:250px;
+	    margin:20px;
+	}
+	.btn_knight {
+		display: flex;
+		justify-content: center;
+	    background-image: url(images/knight.png);
+	    background-position: center;
+	    background-size: 100%;
+	    transition: all 1s;
+	}
+	.btn_wizard { 
+		display: flex;
+		justify-content: center;
+	    background-image: url(images/wizard.png);
+	    background-position: center;
+	    background-size: 100%;
+	    transition: all 1s;
+
+	}
+	.btn_archer {
+		display: flex;
+		justify-content: center;
+	    background-image: url(images/archer.png);
+	    background-position: center;
+	    background-size: 100%;
+	    transition: all 1s;
+	}
+/*hover moves buttonss*/
+		.btn_knight:hover {
+		    background-color: #faaf8c;
+		    transform: translateX(35px);
+		    box-shadow: -7px 1px 5px  #b3955b
+		}
+		.btn_wizard:hover{
+		    background-color: #faaf8c;
+		    transform: translateX(35px);
+		    box-shadow: -7px 1px 5px  #b3955b
+
+
+		}
+		.btn_archer:hover {
+		    background-color: #faaf8c;
+		    transform: translateX(35px);
+		    box-shadow: -7px 1px 5px  #b3955b
+		}
+
+/*the dark half of the page*/
+	.baddies {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	 	background-color: #b3955b;
+		color: white;
+		right: 0;
+		height: 100%;
+	}
+	.box {
+		border-radius: 25px;
+		display: flex;
+		justify-content: left;
+		width:250px;
+		height:250px;
+	    margin:10px;
+	    background-color: #5F5252;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	   	color: red;
+	   	font-size: 20px;
+	}
+
+	.resimg{
+		border-radius: 25px;
+		width:350px;
+		height:350px;
+	    margin:20px;
+	    border: black 1px solid;
+	    background-color: white;
+	}
+	.resimg2{
+		border-radius: 25px;		
+		width:350px;
+		height:350px;
+	    margin:20px;
+	    border: black 1px solid;
+		transform: scaleX(-1);
+		background-color: darkgrey;
+	}
+	.notes{
+		display: flex;
+		font-size: 20px;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 70vw;
+	}
+
+/*ids*/
+
+#rps_result{
+	font-size: 50px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+#restext{	
+}
+
+#resimgcontainer{
+display: flex;
+flex-direction: row;
+background-color: whitesmoke;
+}
+
+#cpoints{
+	font-weight: bold;
+	font-size: 35px;
+	padding: 0px;
+	margin: 0;
+}
+#ppoints{
+	font-weight: bold;
+	font-size: 35px;
+	padding: 0px;
+	margin: 0;
+}
+.playagain:hover {
+	box-shadow: 0 0 0 6b3b35;
+	background-color: indianred;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .baddies {
+    display: none;
+  }
